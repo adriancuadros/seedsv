@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
      "lib/seedsv.rb",
      "lib/seedsv/csv_seed.rb",
      "lib/seedsv/engine.rb",
-     "lib/tasks/seed_csv.rake",
+     "lib/tasks/seedsv.rake",
      "seedsv.gemspec",
      "test/helper.rb",
      "test/test_seedssv.rb"
@@ -47,11 +47,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_runtime_dependency(%q<fastercsv>, ["~> 1.5.3"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_dependency(%q<fastercsv>, ["~> 1.5.3"])
     end
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+    s.add_dependency(%q<fastercsv>, ["~> 1.5.3"])
   end
 end
 
