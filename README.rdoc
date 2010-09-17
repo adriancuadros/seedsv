@@ -1,6 +1,6 @@
 = seedssv
 
-Description goes here.
+Seed your database using csv files.
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +14,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Adrian Cuadros. See LICENSE for details.
+Copyright (c) 2010 Innku. See LICENSE for details.

@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "seedssv"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Seed your database with data from csv files with ease}
+    gem.description = %Q{Seed your database with data from csv files with ease}
     gem.email = "adrian@innku.com"
     gem.homepage = "http://github.com/adriancuadros/seedssv"
     gem.authors = ["Adrian Cuadros"]
