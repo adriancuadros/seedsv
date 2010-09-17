@@ -25,7 +25,9 @@ Gem::Specification.new do |s|
      "VERSION",
      "lib/seedsv.rb",
      "lib/seedsv/csv_seed.rb",
+     "lib/seedsv/engine.rb",
      "lib/tasks/seed_csv.rake",
+     "seedsv.gemspec",
      "test/helper.rb",
      "test/test_seedssv.rb"
   ]

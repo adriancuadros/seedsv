@@ -1,7 +1,7 @@
 require 'seedsv'
 require 'rails'
 
-module Metropoli
+module Seedsv
   class Engine < Rails::Engine
     
   end
