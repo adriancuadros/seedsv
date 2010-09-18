@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
      "test/helper.rb",
      "test/test_seedssv.rb"
   ]
-  s.homepage = %q{http://github.com/adriancuadros/seedssv}
+  s.homepage = %q{http://github.com/adriancuadros/seedsv}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}

@@ -8,7 +8,7 @@ begin
     gem.summary = %Q{Seed your database with data from csv files with ease}
     gem.description = %Q{Seed your database with data from csv files with ease}
     gem.email = "adrian@innku.com"
-    gem.homepage = "http://github.com/adriancuadros/seedssv"
+    gem.homepage = "http://github.com/adriancuadros/seedsv"
     gem.authors = ["Adrian Cuadros"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     gem.add_dependency("fastercsv", "~> 1.5.3")
