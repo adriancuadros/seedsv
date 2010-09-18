@@ -26,7 +26,6 @@ module CsvSeed
   end
   
   def seed_model(model_class)
-    debugger
     if model_class.count == 0
       table_name = model_class.table_name
       puts "Seeding #{model_class.to_s.pluralize}..."
