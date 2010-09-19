@@ -15,7 +15,6 @@ module CsvSeed
     migration_class.transaction do
       csv_file.each do |line_values|
         record = migration_class.new
-        debugger
         line_values.to_hash.keys.map{|attribute| record.send("#{attribute.strip}=",line_values[attribute].strip) }
         record.save(:validate => false)
       end
