@@ -10,7 +10,6 @@ In your gem file:
 == Using it
 
 Seedsv requires the developer to create the folder: 
-
 	Rails.root/db/csv
 
 In this folder you will place all your CSV files with the same name as your database tables. The format of the first line of each file is the following:
