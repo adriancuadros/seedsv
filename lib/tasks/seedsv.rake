@@ -1,7 +1,6 @@
 namespace :db do
   namespace :seed do
     include CsvSeed
-    
     desc 'Seeds your database with csv files under db/csv/*'
     task :csv => :environment do
       Dir.foreach(Rails.root + 'db/csv') do |file|
