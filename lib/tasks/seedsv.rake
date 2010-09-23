@@ -4,8 +4,13 @@ namespace :db do
     desc 'Seeds your database with csv files under db/csv/*'
     task :csv => :environment do
       Dir.foreach(Rails.root + 'db/csv') do |file|
-        unless File.directory?(file)
-          seed_model(eval(file.split('.').first.classify))
+        unless File.directory?(file) or File.extname(file) != '.csv'
+          begin
+            model_class = eval(file.split('.').first.classify)
+            seed_model(model_class) if model_class
+          rescue
+            puts "#{file.split('.').first.classify} class not found, skiping..."
+          end
         end
       end
     end
