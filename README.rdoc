@@ -32,6 +32,10 @@ If something goes wrong and you want to delete everything seeded from CSV files:
 
     rake db:seed:cleanup
 
+== RDoc
+
+http://rdoc.info/github/adriancuadros/seedsv/master/frames
+
 == Copyright
 
 Copyright (c) 2010 Innku. See LICENSE for details.
