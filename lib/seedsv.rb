@@ -25,9 +25,9 @@
 #
 # If something goes wrong and you want to delete everything seeded from csv files:
 #     rake db:seed:cleanup
-
-# See the +has_attached_file+ documentation for more details.
-if defined?(Rails) && Rails::VERSION::MAJOR == 3
-  require 'seedsv/csv_seed'
-  require 'seedsv/engine'
+module Seedsv
+  if defined?(Rails) && Rails::VERSION::MAJOR == 3
+    require 'seedsv/csv_seed'
+    require 'seedsv/engine'
+  end
 end

@@ -1,16 +1,37 @@
-= seedssv
+= Seedsv
 
-Seed your database using csv files.
+Seed your Rails 3 models using CSV files. 
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+== Install it
+
+In your gem file:
+	gem 'seedsv'
+	
+== Using it
+
+Seedsv requires the developer to create the folder: 
+
+	Rails.root/db/csv
+
+In this folder you will place all your CSV files with the same name as your database tables. The format of the first line of each file is the following:
+
+    column_name_1, column_name_2, column_name_3...
+
+So for example, to seed the model City, you would normally have the file: /db/csv/cities.csv
+
+This is the example content of the file
+
+    name, state_id
+    Monterrey, 1
+    Guadalajara, 2
+
+To seed the database with this file
+
+    rake db:seed:csv
+
+If something goes wrong and you want to delete everything seeded from CSV files:
+
+    rake db:seed:cleanup
 
 == Copyright
 

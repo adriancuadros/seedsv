@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "seedsv"
+    gem.name = "Seedsv"
     gem.summary = %Q{Seed your database with data from csv files with ease}
     gem.description = %Q{Seed your database with data from csv files with ease}
     gem.email = "adrian@innku.com"
